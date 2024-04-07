@@ -1,0 +1,29 @@
+.home-page {
+    height: 100vh;
+    /*background: url('./background-image.jpg') no-repeat center center fixed;*/
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    padding: 10px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.main-nav a:hover {
+    background-color: #555;
+}

@@ -1,0 +1,44 @@
+.tasks-page-container {
+    padding-top: 60px; /* Отступ сверху для фиксированного NavBar */
+}
+
+.tasks-list-container {
+    max-width: 1000px; /* Ширина контейнера под таблицу */
+    margin: 0 auto; /* Выравнивание по центру */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+    background: white; /* Белый фон контейнера */
+    border-radius: 8px; /* Скругление углов контейнера */
+}
+
+table {
+    width: 100%; /* Таблица на всю ширину контейнера */
+    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    margin-top: 15px; /* Отступ сверху */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Границы для таблицы и ячеек */
+}
+
+th, td {
+    padding: 8px; /* Отступы в ячейках */
+    text-align: left; /* Выравнивание текста */
+}
+
+th {
+    background-color: #f2f2f2; /* Фон шапки таблицы */
+    color: black; /* Цвет текста шапки */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Чередование фона строк таблицы */
+}
+
+.pagination {
+    display: flex; /* Стилизация блока пагинации */
+    justify-content: flex-end; /* Выравнивание элементов пагинации справа */
+    margin-top: 15px; /* Отступ сверху для блока пагинации */
+}
+
+/* Стилизация других элементов блока пагинации */

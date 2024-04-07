@@ -1,0 +1,51 @@
+.login-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-top: 5px;  /* Отступ сверху будет для лучшего разделения текста и инпута */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px; /* Увеличим размер шрифта для лучшей видимости */
+}
+
+.login-form button {
+    padding: 10px 15px; /* Добавим небольшой паддинг для лучшего визуального эффекта */
+    margin-top: 20px; /* Отбиваем кнопку от последнего input поля */
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold; /* Добавим жирности тексту */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s; /* Плавное изменение фона при наведении */
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* Меняем цвет кнопки при наведении */
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px; /* Отбиваем сообщение об ошибке от поля пароля */
+}

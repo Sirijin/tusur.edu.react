@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  /* Устанавливаем картинку заднего фона для всего приложения */
+  /*background: url('./components/background-image.jpg') no-repeat center center fixed;*/
+  background-size: cover;
+}
+
+
+.page-content {
+  padding-top: 60px;
+  /* другие стили, которые вы хотите применить ко всем страницам */
+}
