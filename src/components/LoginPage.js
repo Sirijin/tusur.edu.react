@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import {useNavigate} from 'react-router-dom'; // Добавляем useHistory
+import {Link, useNavigate} from 'react-router-dom'; // Добавляем useHistory
 import config from '../config';
 import './LoginPage.css'; // Здесь будут стили для страницы
 
@@ -43,6 +43,7 @@ const LoginPage = () => {
                 </label>
                 <button type="submit">Войти</button>
             </form>
+            <Link to="/register">Регистрация</Link>
         </div>
     );
 };

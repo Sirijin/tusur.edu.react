@@ -10,6 +10,7 @@ import './App.css';
 import TaskDetailsPage from "./components/TaskDetailsPage";
 import TheoryPage from "./components/TheoryPage";
 import TestPage from "./components/TestPage";
+import RegistrationPage from "./components/RegistrationPage";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/competitions" element={<CompetitionsPage/>}/>
                 <Route path="/theory" element={<TheoryPage/>}/>
                 <Route path="/test" element={<TestPage />} />
+                <Route path="/register" element={<RegistrationPage />} />
             </Routes>
         </BrowserRouter>
     );
