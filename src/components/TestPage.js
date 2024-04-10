@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import config from '../config';
 import NavBar from './NavBar';
+import './TestPage.css'; // Добавьте эту строку в начале вашего файла TestPage.js
 
 const TestPage = () => {
     const [testData, setTestData] = useState([]);

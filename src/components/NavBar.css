@@ -1,43 +1,36 @@
 .main-nav {
-    display: flex; /* Используем flexbox для выравнивания ссылок */
-    justify-content: space-around; /* Равномерно распределяем ссылки по горизонтали */
+    display: flex; /* Включаем flexbox */
+    justify-content: space-between; /* Равномерно распределяем пространство между элементами */
+    align-items: center; /* Центрируем элементы по вертикали */
     background: #333; /* Темный фон для панели навигации */
-    padding: 10px; /* Добавляем паддинг для внешнего вида */
+    padding: 10px 20px; /* Добавляем паддинг для внешнего вида, отступы по краям */
     position: fixed; /* Фиксируем панель на верху страницы */
-    top: 0; /* Позиция сверху */
-    left: 0; /* Позиция слева */
+    top: 0;
+    left: 0;
     width: 100%; /* Панель навигации на всю ширину */
-    z-index: 1000; /* Убедимся, что навигация всегда сверху других элементов */
+    z-index: 1000; /* nавигация всегда сверху других элементов */
 }
 
-.main-nav a {
-    color: white; /* Белый цвет текста ссылок */
-    text-decoration: none; /* Убираем подчеркивание текста ссылок */
-    padding: 6px 12px; /* Добавляем паддинг для внешнего вида */
-    border: 1px solid white; /* Белая рамка вокруг ссылок */
-    border-radius: 4px; /* Скругляем углы рамки */
-    transition: background-color 0.2s; /* Плавная смена фона при наведении */
-    flex: 1; /* Определяем, что все ссылки должны заполнять доступное пространство */
-    text-align: center; /* Выравниваем текст по центру */
+.main-nav a, .main-nav .logout-button {
+    color: white; /* Белый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px 0; /* Паддинг сверху и снизу для выравнивания высоты */
+    text-align: center; /* Выравнивание текста по центру */
+    transition: background-color 0.2s; /* Плавная смена фона */
+    flex: 1; /* Позволяет каждому элементу расти, чтобы заполнить доступное пространство */
+    margin: 0 10px; /* Отступы между элементами */
+    min-width: 0; /* Обеспечиваем, что flex элементы могут уменьшиться до нуля */
 }
 
-.main-nav a:hover {
-    background-color: #555; /* Цвет фона ссылок при наведении */
-}
-
-.main-nav a:not(:last-child) {
-    margin-right: 10px; /* Добавляем отступ справа для всех ссылок, кроме последней */
-}
-
-.logout-button {
-    padding: 6px 12px;
+.main-nav .logout-button {
     background-color: #f44336; /* Красный цвет фона для кнопки выхода */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    margin-right: 20px; /* Отступ справа, создающий пространство от правого края навигационной панели */
+    border: none; /* Убираем обводку */
+    border-radius: 4px; /* Скругляем углы */
+    cursor: pointer; /* Меняет указатель при наведении */
+}
+
+.main-nav a:hover, .main-nav .logout-button:hover {
+    background-color: #555; /* Цвет фона ссылок при наведении */
 }
 
 .logout-button:hover {

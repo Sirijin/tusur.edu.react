@@ -1,0 +1,60 @@
+.test-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-top: 80px; /* Отступ, чтобы не перекрывалась фиксированная навигационная панель */
+}
+
+.task-item {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-item div {
+    margin-bottom: 10px; /* Отступ для заголовка задачи */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100px; /* Высота textarea для написания решения */
+    margin-bottom: 10px; /* Отступ перед следующим элементом */
+    resize: vertical; /* Пользователь может изменять размер вертикально */
+}
+
+button {
+    background-color: #5caceb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px; /* Больший размер текста */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a94d3;
+}
+
+/* Стилизация сообщения с количеством решенных задач */
+.correct-solutions-count {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px; /* Отступ от кнопки отправки теста */
+}
+
+@media (max-width: 768px) {
+    /* Стилизация для мобильных устройств */
+    .test-container {
+        padding: 20px;
+    }
+
+    .task-item {
+        padding: 15px;
+    }
+}
